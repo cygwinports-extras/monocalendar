@@ -1,0 +1,6 @@
+category: Utils Dotnet
+requires: mono
+sdesc: "iCal clone for .NET"
+ldesc: "MonoCalendar is an application designed for easy management of
+calendars. The idea is to try to make a program like iCal that
+works on other platforms besides the Mac."

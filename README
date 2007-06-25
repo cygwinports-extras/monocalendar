@@ -1,0 +1,59 @@
+monocalendar
+------------------------------------------
+MonoCalendar is an application designed for easy management of 
+calendars. The idea is to try to make a program like iCal that 
+works on other platforms besides the Mac.
+
+Runtime requirements:
+  mono-1.2.3.1-2
+
+Build requirements:
+  cygwin-1.5.24-2
+  cygport-0.3.1-1
+  make-3.81-1
+  mono-1.2.3.1-2
+
+Canonical website:
+  http://www.monocalendar.com/
+
+Canonical download:
+  http://downloads.sourceforge.net/monocalendar/
+
+-------------------------------------------
+
+Build instructions:
+  unpack monocalendar-0.7.2-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./monocalendar-0.7.2-X.cygport all
+
+This will create:
+  /usr/src/monocalendar-0.7.2-X-src.tar.bz2
+  /usr/src/monocalendar-0.7.2-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/monocalendar
+  /usr/lib/monocalendar/CalWidget.dll
+  /usr/lib/monocalendar/Gimp.dll
+  /usr/lib/monocalendar/ListView.dll
+  /usr/lib/monocalendar/MiniGConf.dll
+  /usr/lib/monocalendar/MonoCalendar.exe
+  /usr/lib/monocalendar/MonthCalendar.dll
+  /usr/lib/monocalendar/i18n.dll
+  /usr/share/doc/Cygwin/monocalendar-0.7.2.README
+  /usr/share/doc/monocalendar-0.7.2/ChangeLog.txt
+
+------------------
+
+Port Notes:
+
+----- version 0.7.2-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

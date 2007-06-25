@@ -1,0 +1,21 @@
+inherit mono
+
+DESCRIPTION="iCal clone for .NET"
+HOMEPAGE="http://www.monocalendar.com/"
+SRC_URI="mirror://sourceforge/${PN}/${PN}-source-${PV}.tar.gz"
+SRC_DIR="MonoCalendar"
+
+src_compile() {
+	lndirs
+	cd ${B}/bin/Release
+	cygmake
+}
+
+src_install() {
+	cd ${B}/bin/Release
+
+	insinto /usr/lib/${PN}
+	doins *.dll *.exe
+
+	mono_wrapper monocalendar /usr/lib/${PN}/MonoCalendar.exe
+}
